@@ -282,7 +282,7 @@ public class ConsultaAutomovil extends javax.swing.JFrame {
         // Setear los datos de la tabla
         if (listaAutomoviles != null) {
             for (Automovil auto : listaAutomoviles) {
-                 Object[] objeto = {auto.getId(), auto.getModelo(), auto.getMarca(), auto.getMotor(), auto.getColor(), auto.getPatente()};
+                 Object[] objeto = {auto.getId(), auto.getModelo(), auto.getMarca(), auto.getMotor(), auto.getColor(), auto.getPatente(), auto.getCantPuertas()};
                  modeloTabla.addRow(objeto);
                  
             }

@@ -41,7 +41,7 @@ public class PrincipalUser extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jLabel1.setText("Sistema Administrador de Usuarios");
+        jLabel1.setText("Automoviles");
 
         tablaAutos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -195,7 +195,7 @@ public class PrincipalUser extends javax.swing.JFrame {
         // Setear los datos de la tabla
         if (listaAutomoviles != null) {
             for (Automovil auto : listaAutomoviles) {
-                 Object[] objeto = {auto.getId(), auto.getModelo(), auto.getMarca(), auto.getMotor(), auto.getColor(), auto.getPatente()};
+                 Object[] objeto = {auto.getId(), auto.getModelo(), auto.getMarca(), auto.getMotor(), auto.getColor(), auto.getPatente(), auto.getCantPuertas()};
                  modeloTabla.addRow(objeto);
                  
             }
